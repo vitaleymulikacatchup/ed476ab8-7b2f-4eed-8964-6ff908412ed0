@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -32,12 +32,12 @@ export default function Home() {
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
-          navItems={[
-            { name: "Bikes", id: "products" },
-            { name: "Technology", id: "features" },
-            { name: "Pricing", id: "pricing" },
-            { name: "About", id: "about" },
-            { name: "Contact", id: "contact" }
+          links={[
+            { label: "Bikes", href: "products" },
+            { label: "Technology", href: "features" },
+            { label: "Pricing", href: "pricing" },
+            { label: "About", href: "about" },
+            { label: "Contact", href: "contact" }
           ]}
           brandName="Giant Bicycles"
           button={{
