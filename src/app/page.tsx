@@ -32,12 +32,12 @@ export default function Home() {
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
-          links={[
-            { label: "Bikes", href: "products" },
-            { label: "Technology", href: "features" },
-            { label: "Pricing", href: "pricing" },
-            { label: "About", href: "about" },
-            { label: "Contact", href: "contact" }
+          navItems={[
+            { name: "Bikes", id: "products" },
+            { name: "Technology", id: "features" },
+            { name: "Pricing", id: "pricing" },
+            { name: "About", id: "about" },
+            { name: "Contact", id: "contact" }
           ]}
           brandName="Giant Bicycles"
           button={{
